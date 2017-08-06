@@ -1,25 +1,31 @@
+const path = require('path');
+
 module.exports = {
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + '/src/index.jsx',
   output: {
     path: __dirname + '/build',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['react','es2015']
-        }
-      }
-    ]
+    rules: [{
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['react', 'stage-3', 'latest'],
+      },
+    }],
   },
-
   devtool: 'source-map',
   resolve: {
-    extentions: ['', '.js', '.jsx']
-  }
-}
+    modules: [
+      'node_modules',
+      path.resolve('./src'),
+    ],
+    extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    contentBase: 'build',
+  },
+};
