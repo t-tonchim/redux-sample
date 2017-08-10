@@ -4,6 +4,9 @@ module.exports = {
   context: path.resolve(__dirname),
   entry: {
     basic: './basic/src/index.jsx',
+    actions: './actions/src/index.jsx',
+    thunk: './thunk/src/index.jsx',
+    saga: './saga/src/index.jsx',
   },
   output: {
     path: path.resolve(__dirname, 'build'),
