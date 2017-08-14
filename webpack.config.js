@@ -1,16 +1,13 @@
-const path = require('path');
+const path = require('path')
+
+const env = process.env.NODE_ENV
 
 module.exports = {
   context: path.resolve(__dirname),
-  entry: {
-    basic: './basic/src/index.jsx',
-    actions: './actions/src/index.jsx',
-    thunk: './thunk/src/index.jsx',
-    saga: './saga/src/index.jsx',
-  },
+  entry: `./${env}/src/index.jsx`,
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].js',
+    filename: 'bundle.js',
   },
 
   module: {
@@ -34,4 +31,4 @@ module.exports = {
   devServer: {
     contentBase: 'build',
   },
-};
+}
