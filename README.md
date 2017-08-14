@@ -6,12 +6,12 @@
 $ yarn install
 ```
 
-- 次にwebpack dev serverを起動します。
+- 次にwebpack dev serverを起動します。basicの部分は起動したいサンプルに合わせて変更してください。
 
 ```
-$ yarn start
+$ NODE_ENV=basic yarn start
 ```
 
 http://localhost:8080/ でアクセス可能です。
 
-ソースコードはsrc/ 以下を参照してください。
+ソースコードは各src/ 以下を参照してください。
