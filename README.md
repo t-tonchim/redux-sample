@@ -6,7 +6,7 @@
 $ yarn install
 ```
 
-- 次にwebpack dev serverを起動します。basicの部分は起動したいサンプルに合わせて変更してください。
+- 次にwebpack dev serverを起動します。basicの部分は起動したいサンプルに合わせて変更してください。例えばthunk以下のサンプルを動かしたい場合は`NODE_ENV=thunk`としてください。
 
 ```
 $ NODE_ENV=basic yarn start
