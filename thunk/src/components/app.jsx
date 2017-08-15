@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchHello, fetchFailHello } from '../actions/helloAction'
-
+import { fetchHello } from '../actions/helloAction'
 
 class App extends Component {
   render(){
@@ -26,7 +25,6 @@ const mapStateToProps = state =>
     isFetching: state.isFetching,
     error: state.error
   })
-
 
 const mapDispathToProps = dispatch =>
   ({
