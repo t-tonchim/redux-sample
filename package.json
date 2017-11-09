@@ -19,13 +19,17 @@
   "homepage": "https://github.com/tomoyuki-tanaka/redux-sample#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "babel-polyfill": "^6.26.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
-    "redux-thunk": "^2.2.0"
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.15.6",
+    "redux-thunk": "^2.2.0",
+    "redux-validator": "^0.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -39,6 +43,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
+    "prettier": "^1.7.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.6.1"
   }
